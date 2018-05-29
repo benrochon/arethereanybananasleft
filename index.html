@@ -6,11 +6,13 @@
   crossorigin="anonymous"></script>
 </head>
 <body>
-<h1>Are there any bananas left?2</h1>
-  
+<h1 class="no">PROBABLY NOT</h1>
+<h1 class="yes">YES</h1> 
 <script>
+  var test
 $.getJSON('https://us-central1-jda-labs-technology-sandbox.cloudfunctions.net/fruitagent', function(data) {
     console.log(data)
+    test = data
 });
   </script>
   
