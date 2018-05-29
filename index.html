@@ -1,20 +1,49 @@
+
 <head>
   <title>Are there any bananas left?</title>
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+
+  <style>
+  body{
+    background-color: #FFEB3B;
+  }
+  .yes{
+    color: brown;
+    font-size: 22em;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .no{
+    color: brown;
+    font-size: 8em;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .hidden{
+    display:none;
+  }
+  </style>
+
 </head>
 <body>
-<h1 class="no">PROBABLY NOT</h1>
-<h1 class="yes">YES</h1> 
+<h1 class="no hidden">PROBABLY<br/>NOT</h1>
+<h1 class="yes hidden">YES</h1>
 <script>
   var test
 $.getJSON('https://us-central1-jda-labs-technology-sandbox.cloudfunctions.net/fruitagent', function(data) {
     console.log(data)
-    test = data
+    detected = data = eval("(" + data.detected + ')')
+    if ('banana' in detected){
+      $( ".yes" ).removeClass( "hidden" )
+      console.log('yes')
+    }else{
+        $( ".no" ).removeClass( "hidden" )
+      console.log('no')
+    }
 });
   </script>
-  
+
 </body>
-  
