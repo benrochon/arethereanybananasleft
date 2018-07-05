@@ -1,6 +1,8 @@
-#🍌🍌🍌🍌🍌🍌🍌🍌
+# 🍌🍌🍌🍌🍌🍌🍌🍌
+
 *Fruit detection using YOLO 9000*
-##Summary
+
+## Summary
 
 During a two-days hackathon held internally at JDA Labs, we wanted to experiment with [YOLO 9000](https://github.com/philipperemy/yolo-9000).
 We decided to point a camera at the fruit basket and see what kind of results we could get. The ultimate goal would be to be able get an quantity estimate for each type of fruits present or to the very least provide a list of the detected fruits. 
@@ -8,7 +10,7 @@ We decided to point a camera at the fruit basket and see what kind of results we
 
 The problem we tackled is quite complex by itself as fruits are placed chaotically in the basket.
 
-##Contributors
+## Contributors
 - Celine Bouillon
 - Chloé Gérin-Lajoie
 - Éric Prescott Gagnon
