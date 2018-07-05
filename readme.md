@@ -20,17 +20,20 @@ The problem we tackled is quite complex by itself as fruits are placed chaotical
 ## Findings
 
 ### Not really accurate results
+
 ![](images/predictions.png)
 
 The results were pretty much laughable. It detected a small portion of the fruits but also gave a lot of false positives by misidentifying some fruits. Apple instead of peach. Orange instead of clementines. I can't really blame it since I can sometimes not make the difference myself.
 
 In one out of the basket test we made two types of pear and the lemon were not identified at all.
+
 ![](images/predictions2.png)
 
 It's something we've been expecting from such a general purpose algorithm. One follow up task  would be to train it with our own dataset. 
 
 ### Change Isolation did not not work
 We attempted to take a before and after of a fruit being removed from the basket to isolate changes in the images before passing through the model.
+
 ![](images/difference.gif)
 
     [(‘n04275548’, ‘spider_web’, 0.52337879),
